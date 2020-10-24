@@ -4,11 +4,12 @@ body {
 a {
   text-decoration: none;
 }
-
-
-
-
-
+ a:hover {
+    text-shadow: 2px 2px #6CD4FF;
+ }
+img:hover {
+    filter: brightness(85%);
+ }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -47,6 +48,10 @@ table {
 			font-family: 'Roboto', sans-serif;
 			top: 10em;
 			text-align: center;
+}
+a:hover {
+  color: #9EE493;
+
 	
 }
 }
