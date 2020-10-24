@@ -8,7 +8,7 @@ a {
     text-shadow: 2px 2px #6CD4FF;
  }
 img:hover {
-    filter: brightness(85%);
+    filter: brightness(85%); 
  }
 
 /* Extra small devices (phones, 600px and down) */
@@ -127,7 +127,7 @@ table {
 
 
 
-
+~~!why the fuck isn't this working~~
 
 
 
