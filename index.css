@@ -12,11 +12,14 @@ background-color: black;
 }
 
 .logo {
+  display: block;
+  margin-top: 10%;
+  margin-left: 2%;
   order: 1;
-  align-self: flex-start;
-  max-width: 89%;
+  max-width: 100%;
   min-width: 0;
   flex-shrink: 2.2;
+  align-self: flex-end;
 }
 
 /* Place the navbar at the bottom of the page, and make it stick */
@@ -30,7 +33,7 @@ background-color: black;
     align-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    flex-grow: 1;
+    flex-grow: 2.2;
 
 }
 
