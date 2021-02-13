@@ -1,0 +1,64 @@
+body {
+background-color: black;
+  }
+
+.site {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.logo {
+  order: 1;
+  align-self: flex-start;
+  max-width: 89%;
+  min-width: 0;
+  flex-shrink: 2.2;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    order: 2;
+    align-self: flex-end;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  flex-grow: 1;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 240%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  text-shadow: 2px 2px #6CD4FF;
+  color: auto;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
