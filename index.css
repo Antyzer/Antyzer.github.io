@@ -37,6 +37,14 @@ background-color: black;
 
 }
 
+.button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  outline:none;
+}
+
 /* Style the links inside the navigation bar */
 .navbar a {
   flex-grow: 1;

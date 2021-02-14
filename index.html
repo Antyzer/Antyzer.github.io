@@ -29,27 +29,16 @@
   	<link rel="stylesheet" href="index.css">
 
   	<link rel="shortcut icon" href="favicon.ico">
-
-  </head>
-
 <body>
 
-  <audio autoplay>
-    <source src="/sounds/1.ogg" type="audio/ogg">
-    <source src="/sounds/1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+  <audio id="logosound">
+    <source src="1.ogg" type="audio/ogg">
+    <source src="1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 
-  <script>
-  window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
-  </script>
-
 <div class="site">
-  	<img src="logopng.png" class="logo"/>
+  	<button onclick="playAudio()" type="button" class="button"><img src="logopng.png" class="logo"></button>
     <div class="navbar">
       <a href="https://twitch.tv/antyzer/" target="_blank" style="color:#694EA8" hover="color:#8da84e"/>twitch
       <a href="https://www.youtube.com/channel/UC-VQx4RFOdiu9tfTF1g4gOg" target="_blank" style="color:#E20002"/>youtube
@@ -59,6 +48,18 @@
       <a href="https://progressivepowerhouse.github.io/" style="color:#FFFFFF;"/>Progressive Powerhouse
       <a href="factsheet" style="color:orange"/>Factsheets
     </div>
+
+<script>
+    var x = document.getElementById("logosound");
+
+    function playAudio() {
+      x.play();
+    }
+
+    function pauseAudio() {
+      x.pause();
+    }
+  </script>
 
 </div>
 
