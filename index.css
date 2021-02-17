@@ -1,5 +1,19 @@
 body {
-background-color: black;
+  background: linear-gradient(-45deg, #ff6c78, #ff6cc2, #6cd4ff);
+  	background-size: 400% 400%;
+  	animation: gradient 10s ease infinite;
+  }
+
+  @keyframes gradient {
+  	0% {
+  		background-position: 0% 50%;
+  	}
+  	50% {
+  		background-position: 100% 50%;
+  	}
+  	100% {
+  		background-position: 0% 50%;
+  	}
   }
 
 .site {
@@ -49,7 +63,7 @@ background-color: black;
 .navbar a {
   flex-grow: 1;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,9 +73,46 @@ background-color: black;
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  text-shadow: 2px 2px #6CD4FF;
-  color: auto;
 }
+
+.twitch:hover {
+  text-shadow: 2px 2px #694EA8;
+  color: #9967cd;
+}
+
+.youtube:hover {
+  text-shadow: 2px 2px #E20002;
+  color: #f07f80;
+}
+
+.twitter:hover {
+  text-shadow: 2px 2px #3FAFDE;
+  color: #8bcfeb;
+}
+
+.discord:hover {
+  text-shadow: 2px 2px #6D83D0;
+  color: #a7b4e2;
+}
+
+.socials:hover {
+  text-shadow: 2px 2px #49306B;
+  color: #67306b;
+}
+
+.pph:hover {
+  text-shadow: 2px 2px #64D0EA;
+  color: #50a6bb;
+}
+
+.factsheets:hover {
+  text-shadow: 2px 2px #FFAA6C;
+  color: #ffcca6;
+}
+
+
+
+
 
 /* Add a green background color to the active link */
 .navbar a.active {
