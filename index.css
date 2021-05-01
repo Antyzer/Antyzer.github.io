@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(-45deg, #ff6c78, #ff6cc2, #6cd4ff);
-  	background-size: 400% 400%;
-  	animation: gradient 10s ease infinite;
+  background: linear-gradient(45deg, #FF6CC2, #ff6c78, #FF6CC2);
+  	background-size: 800% 800%;
+  	animation: gradient 5s ease infinite;
   }
 
   @keyframes gradient {
@@ -100,27 +100,8 @@ body {
   color: #67306b;
 }
 
-.pph:hover {
-  text-shadow: 2px 2px #64D0EA;
-  color: #50a6bb;
-}
 
 .factsheets:hover {
   text-shadow: 2px 2px #FFAA6C;
   color: #ffcca6;
-}
-
-
-
-
-
-/* Add a green background color to the active link */
-.navbar a.active {
-  background-color: black;
-  color: white;
-}
-
-/* Hide the link that should open and close the navbar on small screens */
-.navbar .icon {
-  display: none;
 }
