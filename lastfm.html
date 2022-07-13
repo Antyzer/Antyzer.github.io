@@ -25,9 +25,8 @@
                 // IF the 'previous' track and the 'current' track are different, let's change our data (Album Cover, Name, and Artist)
                 if (previous && current && previous !== current) {
 
-                    $('#album').html('<img src="' + track.image[2]['#text'] + '" />');
-                    $('#track').html('<h2>' + track.name + '</h2>');
-                    $('#artist').html('<h4>' + track.artist['#text'] + '</h4>');
+                    $('#testing').html('<p style="font-style: italic;">' + 'Now Playing &#9835;' + '</p>' + track.name + '&nbsp - &nbsp' + track.artist['#text'])
+
                 }
                 // This allows us to check the values upon subsequent track changes.
                 previous = current;
@@ -36,15 +35,12 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="testing.css">
 </head>
 
 <body>
     <section id="spotify_widget">
-        <div id="artist"></div>
-        <div id="track"></div>
+        <div id="testing" style="color:white;font-family:Arial;font-weight: bold;display: table-cell;vertical-align: bottom;"></div>
     </section>
-
 
 </body>
 </html>
